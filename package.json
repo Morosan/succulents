@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^4.1.0",
+    "gulp-data": "^1.2.1",
+    "gulp-ejs": "^3.0.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "jquery": "3.1.0",
+    "normalize.css": "3.0.3",
+    "postcss-round-subpixels": "^1.2.0",
+    "pump": "3.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "h5bp-configs": {
+    "directories": {
+      "archive": "archive",
+      "dist": "dist",
+      "src": "src",
+      "test": "test"
+    }
+  },
+  "name": "wwco",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "test": "",
+    "static": ""
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
