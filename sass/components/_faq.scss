@@ -1,0 +1,58 @@
+.faq-component {
+  display: flex;
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 14rem;
+  font-family: $secondary-type;
+  color: $primary;
+
+  .faq-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  hr {
+    width: 3rem;
+    background: $primary;
+    border-color: $primary;
+  }
+
+  .faq-subtitle {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .faq-wrapper {
+    .question-item {
+      border-bottom: 1px solid;
+      display: flex;
+      justify-content: space-between;
+
+      .question-wrapper {
+        .question {
+          font-size: 1.6rem;
+        }
+
+        .faq-answer {
+          display: none;
+        }
+      }
+
+      input[type="button"] {
+        border: 1px solid transparent;
+        background: none;
+        cursor: pointer;
+        background-image: url("/xampp/htdocs/succulents/img/arrow-down.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+        &:checked {
+          display: none;
+        }
+      }
+    }
+  }
+}

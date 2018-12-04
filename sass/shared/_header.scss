@@ -1,0 +1,154 @@
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: $secondary;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  
+  .header-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 140rem;
+    height: 6rem;
+    position: relative;
+
+    @media (max-width: 500px) {
+      justify-content: flex-end;
+    }
+
+    .navigation {
+      width: 100%;
+      align-self: center;
+      margin: 0 auto;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+
+      &.is-active {
+        display: block;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        background: $dark-gray;
+        z-index: 2;
+      }
+
+      .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+
+        @media (max-width: 500px) {
+          flex-direction: column;
+          text-align: center;
+          z-index: 1;
+        }
+        
+        .nav-item {
+          list-style: none;
+
+          @media (max-width: 500px) {
+            padding: 2rem;
+          }
+  
+          .item {
+            color: $primary;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 0.6rem 4rem;
+
+            @media (max-width: 500px) {
+              font-size: 2rem;
+            }
+  
+            &:hover {
+              color: rgba($primary, 0.6);
+              transition: .4s ease;
+            } 
+          }
+        }
+      }
+    }
+  
+    .dropdown-wrapper {
+      margin-right: 2rem;
+
+      .nav-dropdown-btn {
+        display: none;
+        color: $primary;
+        width: 4rem;
+        height: 6rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        
+        
+        @media (max-width: 500px) {
+          display: block;
+        }
+
+        span {
+          display: block;
+          position: absolute;
+          height: .4rem;
+          width: 100%;
+          background: #d3531a;
+          border-radius: 1rem;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: .25s ease-in-out;
+
+        }
+        
+        :nth-child(1) {
+          top: 1.7rem;
+          transform-origin: left center;
+        }
+
+        :nth-child(2) {
+          top: 2.8rem;
+          transform-origin: left center;
+        }
+
+        :nth-child(3) {
+          top: 3.9rem;
+          transform-origin: left center;
+        }
+
+        &.open {
+          :nth-child(1) {
+            transform: rotate(45deg);
+            top: 1.6rem;
+            left: .8rem;
+          }
+
+          :nth-child(2) {
+            width: 0%;
+            opacity: 0;
+          }
+
+          :nth-child(3) {
+            transform: rotate(-45deg);
+            top: 4.4rem;
+            left: .8rem;
+          }
+        }
+      }
+    }
+  }
+}

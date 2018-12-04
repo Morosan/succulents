@@ -1,0 +1,56 @@
+.special-request-component {
+  background-image: url("/xampp/htdocs/succulents/img/medium-green.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70rem;
+  width: 100%;
+  margin: auto;
+  max-width: 140rem;
+
+  .sr-main-title {
+    margin: 10rem 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    word-spacing: 0.6rem;
+  }
+
+  .hr {
+    margin: 3rem auto;
+    background-color: $white;
+    border-color: $white;
+    width: 3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 60rem;
+    
+    input,
+    textarea {
+      border-radius: .4rem;
+      border: transparent;
+      padding: 1.2rem;
+      margin: 1rem;
+      color: $primary;
+
+      &:hover {
+        background-color: $gray;
+      }
+    }
+
+    .secondary-btn {
+      width: auto;
+      padding: 1.2rem;
+      margin: 1rem;
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}

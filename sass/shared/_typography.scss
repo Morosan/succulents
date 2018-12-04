@@ -1,0 +1,37 @@
+$primary-type: Arial, Helvetica, sans-serif;
+$secondary-type: 'Roboto', sans-serif;
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-size: 3.2rem; 
+}
+
+h2,
+.h2 {
+  font-size: 2.4rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.8rem;
+}
+
+p,
+span {
+  font-size: 1.2rem;
+}
+
+hr,
+.hr {
+  margin: 4rem auto;
+  max-width: 8rem;
+  height: 1px;
+  background-color: $white;
+  border-radius: 0.8rem;
+  border: 1px solid $white;
+}
+

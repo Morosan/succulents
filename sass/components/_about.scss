@@ -1,0 +1,137 @@
+.about-us-component {
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+  padding-top: 6rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .about-item {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: $white;
+    height: 50rem;
+
+    &:last-child {
+      @media (max-width: 768px) {
+        height: 30rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .item-wrapper1 {
+      width: 100%;
+      margin-top: 6rem;
+
+      .about-main-title {
+        text-transform: uppercase;
+        color: $primary;
+        text-align: center;
+        margin: 0;
+      }
+  
+      .hr {
+        margin: 3rem auto;
+        background-color: $primary;
+        border-color: $primary;
+        width: 3rem;
+      }
+  
+      .about-us-text {
+        color: $primary;
+        line-height: 2;
+        text-align: justify;
+        font-size: 1.6rem;
+        padding: 0 6rem;
+        margin: 0;
+      }
+    }
+
+    .item-wrapper2 {
+      display: inline-flex;
+      width: 100%;
+
+      .first-image {
+        background-color: black;
+        width: 50%;
+        height: 50rem;
+        background-image: url(/xampp/htdocs/succulents/img/image-aloe.jpg);
+        background-size: cover;
+        background-position: top left;
+      }
+
+      .second-image {
+        width: 50%;
+        background-color: gray;
+        height: 50rem;
+        background-image: url(/xampp/htdocs/succulents/img/bg-image3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .item-wrapper3 {
+      .third-image {
+        width: 100%;
+        height: 50rem;
+      }
+    }
+
+    .item-wrapper4 {
+      background-color: $third;
+      height: inherit;
+      text-align: center;
+
+      h1 {
+        font-size: 8rem;
+        padding: 6rem 10rem 0;
+        margin: 0 0 3rem 0;
+        line-height: 1;
+        color: $primary;
+        text-transform: uppercase;
+
+        @media (max-width: 1388px) {
+          font-size: 8rem;
+        }
+
+        @media (max-width: 1326px) {
+          font-size: 7rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 6rem;
+        }
+
+        @media (max-width: 922px) {
+          font-size: 5rem;
+        }
+
+        @media (max-width: 768px) {
+          padding: 6rem 6rem 0;
+        }
+
+        @media (max-width: 425px) {
+          padding: 3rem 2rem 0;
+        }
+
+        @media (max-width: 320px) {
+          padding: 1rem 1rem 0;
+        }
+      }
+
+      .secondary-btn {
+        
+      }
+    }
+  }
+}

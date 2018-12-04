@@ -1,0 +1,83 @@
+.hero-component {
+  text-align: center;
+  background-image: url("../img/bg-image.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  height: 100vh;
+
+  .hero-wrapper {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .hero-img {
+      object-fit: contain;
+      max-width: 8rem;
+      opacity: 0.8;
+    }
+    
+    .main-title {
+      color: $white;
+      font-size: 8rem;
+      margin: 0 0 2rem 0;
+      letter-spacing: 0.6rem;
+
+      @media (max-width: 768px) {
+        font-size: 6rem;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 4rem;
+      }
+    }
+  
+    .secondary-title {
+      font-size: 2rem;
+      font-weight: 400;
+      color: rgba($white, .8);
+      margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &.shop-page {
+    background-image: url("../img/shop-hero3.jpg");
+
+    .hero-wrapper {
+      .main-title {
+        letter-spacing: normal;
+        text-transform: uppercase;
+        max-width: 106rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+
+      .secondary-title {
+        max-width: 90rem;
+        margin: 0 auto;
+        line-height: 2.6rem;
+        margin-bottom: 6rem;
+      }
+
+      .move-down-btn {
+        opacity: .8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

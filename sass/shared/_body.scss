@@ -1,0 +1,11 @@
+.body-container {
+  display: inline-block;
+  width: 100%;
+  background-color: $secondary;
+
+  main {
+    .main-container {
+      margin-bottom: 5rem;
+    }
+  }
+}

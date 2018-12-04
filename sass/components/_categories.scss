@@ -1,0 +1,98 @@
+.categories-component {
+  display: flex;
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+  
+  .category-item {
+    text-align: center;
+    width: 100%;
+    max-width: 42rem;
+    margin: 3rem 0;
+    color: $primary;
+    text-transform: lowercase;
+    text-decoration: none;
+    background-color: $white;
+    box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.75);
+
+    @media (max-width: 1024px) {
+      margin: 3rem auto;
+    }
+
+    &:hover,
+    :focus {
+      box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+    }
+
+    &:active {
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+
+    .cat-main-title {
+      text-transform: uppercase;
+    }
+
+    .hr {
+      background-color: $primary;
+      border-color: $primary;
+      width: 3rem;
+    }
+
+    .category-text {
+      font-size: 1.6rem;
+    }
+
+    .category-image {
+      object-fit: contain;
+      max-height: 20rem;
+    }
+  }
+
+  &.shop-page {
+    .category-item {
+      background: none;
+      box-shadow: none;
+
+      .item-wrapper {
+        display: block;
+        background-color: $white;
+        box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.75);
+        margin-bottom: 2rem;
+        cursor: pointer;
+  
+        &:hover,
+        :focus {
+          box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+        }
+    
+        &:active {
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
+
+        .cat-main-title {
+          margin: 0;
+          padding-top: 3rem;
+        }
+      }
+
+      .item-description {
+        text-transform: none;
+        font-family: $secondary-type;
+
+        .product-name {
+          margin: 0;
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+        }
+
+        .product-price {
+          margin: 0;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
