@@ -1,16 +1,16 @@
 .categories-component {
   display: flex;
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 5rem;
   
   .category-item {
     text-align: center;
     width: 100%;
-    max-width: 42rem;
+    max-width: 34rem;
     margin: 3rem 0;
     color: $primary;
     text-transform: lowercase;
@@ -85,12 +85,12 @@
         .product-name {
           margin: 0;
           margin-bottom: 1rem;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
 
         .product-price {
           margin: 0;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
       }
     }

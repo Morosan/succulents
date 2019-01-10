@@ -1,10 +1,12 @@
 .footer {
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
 
   .footer-component {
     display: flex;
     width: 100%;
+    margin: 0 auto;
+    max-width: 110rem;
     flex-direction: column;
     align-items: center;
     background-color: $third;
@@ -114,7 +116,7 @@
         list-style: none;
   
         .icon-item {
-          font-size: 2.4rem;
+          font-size: 2rem;
           margin: 0 2rem;
           
           a {
@@ -131,7 +133,7 @@
     }
   
     .footer-map {
-      max-width: 140rem;
+      max-width: 110rem;
       width: 100%;
     } 
   

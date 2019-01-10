@@ -5,7 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   height: 100vh;
 
@@ -23,7 +23,7 @@
     
     .main-title {
       color: $white;
-      font-size: 8rem;
+      font-size: 7rem;
       margin: 0 0 2rem 0;
       letter-spacing: 0.6rem;
 
@@ -43,7 +43,7 @@
       margin: 0;
 
       @media (max-width: 768px) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
 
       @media (max-width: 425px) {

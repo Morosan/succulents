@@ -8,11 +8,11 @@ h3,
 
 h2,
 .h2 {
-  font-size: 2.4rem; }
+  font-size: 2.2rem; }
 
 h3,
 .h3 {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 p,
 span {
@@ -87,7 +87,7 @@ html {
     display: flex;
     -ms-flex-pack: start;
         justify-content: flex-start;
-    max-width: 140rem;
+    max-width: 110rem;
     height: 6rem;
     position: relative; }
     @media (max-width: 500px) {
@@ -134,7 +134,7 @@ html {
           .header .header-wrapper .navigation .nav-container .nav-item .item {
             color: #B97F6D;
             text-decoration: none;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 600;
             padding: 0.6rem 4rem; }
             @media (max-width: 500px) {
@@ -209,12 +209,14 @@ html {
     margin-bottom: 5rem; }
 
 .footer {
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto; }
   .footer .footer-component {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    margin: 0 auto;
+    max-width: 110rem;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
@@ -307,7 +309,7 @@ html {
             justify-content: space-evenly;
         list-style: none; }
         .footer .footer-component .footer-subscribe .footer-icons .icon-item {
-          font-size: 2.4rem;
+          font-size: 2rem;
           margin: 0 2rem; }
           .footer .footer-component .footer-subscribe .footer-icons .icon-item a {
             color: #B97F6D;
@@ -316,7 +318,7 @@ html {
             .footer .footer-component .footer-subscribe .footer-icons .icon-item a :focus {
               color: rgba(255, 255, 255, 0.8); }
     .footer .footer-component .footer-map {
-      max-width: 140rem;
+      max-width: 110rem;
       width: 100%; }
     .footer .footer-component .main-title {
       text-transform: uppercase;
@@ -334,7 +336,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   height: 100vh; }
   .hero-component .hero-wrapper {
@@ -349,7 +351,7 @@ html {
       opacity: 0.8; }
     .hero-component .hero-wrapper .main-title {
       color: #ffffff;
-      font-size: 8rem;
+      font-size: 7rem;
       margin: 0 0 2rem 0;
       letter-spacing: 0.6rem; }
       @media (max-width: 768px) {
@@ -365,7 +367,7 @@ html {
       margin: 0; }
       @media (max-width: 768px) {
         .hero-component .hero-wrapper .secondary-title {
-          font-size: 1.8rem; } }
+          font-size: 1.4rem; } }
       @media (max-width: 425px) {
         .hero-component .hero-wrapper .secondary-title {
           font-size: 1.6rem; } }
@@ -391,17 +393,17 @@ html {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 5rem; }
   .categories-component .category-item {
     text-align: center;
     width: 100%;
-    max-width: 42rem;
+    max-width: 34rem;
     margin: 3rem 0;
     color: #B97F6D;
     text-transform: lowercase;
@@ -450,14 +452,14 @@ html {
       .categories-component.shop-page .category-item .item-description .product-name {
         margin: 0;
         margin-bottom: 1rem;
-        font-size: 1.8rem; }
+        font-size: 1.6rem; }
       .categories-component.shop-page .category-item .item-description .product-price {
         margin: 0;
-        font-size: 1.8rem; }
+        font-size: 1.6rem; }
 
 .about-us-component {
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   display: -ms-flexbox;
   display: flex;
@@ -512,14 +514,14 @@ html {
         background-color: black;
         width: 50%;
         height: 50rem;
-        background-image: url(/xampp/htdocs/succulents/img/image-aloe.jpg);
+        background-image: url("/succulents/img/image-aloe.jpg");
         background-size: cover;
         background-position: top left; }
       .about-us-component .about-item .item-wrapper2 .second-image {
         width: 50%;
         background-color: gray;
         height: 50rem;
-        background-image: url(/xampp/htdocs/succulents/img/bg-image3.jpg);
+        background-image: url("/succulents/img/bg-image3.jpg");
         background-size: cover;
         background-position: center; }
     .about-us-component .about-item .item-wrapper3 .third-image {
@@ -559,7 +561,7 @@ html {
             padding: 1rem 1rem 0; } }
 
 .special-request-component {
-  background-image: url("/xampp/htdocs/succulents/img/medium-green.jpg");
+  background-image: url("/succulents/img/medium-green.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -572,12 +574,13 @@ html {
   height: 70rem;
   width: 100%;
   margin: auto;
-  max-width: 140rem; }
+  max-width: 110rem; }
   .special-request-component .sr-main-title {
     margin: 10rem 0 0 0;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
-    word-spacing: 0.6rem; }
+    word-spacing: 0.6rem;
+    padding: 0 2rem; }
   .special-request-component .hr {
     margin: 3rem auto;
     background-color: #ffffff;
@@ -602,6 +605,15 @@ html {
       .special-request-component form input:hover,
       .special-request-component form textarea:hover {
         background-color: #e1e1e1; }
+      .special-request-component form input::-webkit-input-placeholder,
+      .special-request-component form textarea::-webkit-input-placeholder {
+        color: #B97F6D; }
+      .special-request-component form input:-ms-input-placeholder,
+      .special-request-component form textarea:-ms-input-placeholder {
+        color: #B97F6D; }
+      .special-request-component form input::placeholder,
+      .special-request-component form textarea::placeholder {
+        color: #B97F6D; }
     .special-request-component form .secondary-btn {
       width: auto;
       padding: 1.2rem;
@@ -644,9 +656,114 @@ html {
       border: 1px solid transparent;
       background: none;
       cursor: pointer;
-      background-image: url("/xampp/htdocs/succulents/img/arrow-down.png");
+      background-image: url("/succulents/img/arrow-down.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
       .faq-component .faq-wrapper .question-item input[type="button"]:checked {
         display: none; }
+
+#login-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  background: #ffffff;
+  height: 40rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
+  #login-box .left-box-log {
+    box-sizing: border-box;
+    padding: 4rem;
+    width: 100%;
+    max-width: 50rem;
+    height: 40rem; }
+    #login-box .left-box-log .main-title {
+      margin: 0 0 3rem 0;
+      font-weight: 300;
+      font-size: 2.8rem; }
+    #login-box .left-box-log input[type="text"],
+    #login-box .left-box-log input[type="password"] {
+      display: block;
+      box-sizing: border-box;
+      margin-bottom: 2rem;
+      padding: .4rem;
+      width: 100%;
+      max-width: 40rem;
+      height: 3.2rem;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #aaa;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      transition: 0.2s ease; }
+    #login-box .left-box-log input[type="submit"] {
+      margin-bottom: 2.8rem;
+      width: 100%;
+      max-width: 12rem;
+      height: 3.2rem;
+      background: #f44336;
+      border: 1px solid transparent;
+      border-radius: .2rem;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+      cursor: pointer; }
+      #login-box .left-box-log input[type="submit"]:hover, #login-box .left-box-log input[type="submit"]:focus {
+        background: #ff5722;
+        transition: 0.2s ease; }
+  #login-box .right-box-log {
+    box-sizing: border-box;
+    padding: 4rem;
+    width: 100%;
+    max-width: 50rem;
+    height: 40rem;
+    background-image: url("../img/social.jpg");
+    background-position: center;
+    background-repeat: no-repeat; }
+    #login-box .right-box-log .social-sign-in {
+      display: block;
+      margin-bottom: 4rem;
+      font-size: 2.8rem;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
+    #login-box .right-box-log button.social {
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 22rem;
+      height: 3.6rem;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 500;
+      transition: 0.2 ease;
+      cursor: pointer; }
+      #login-box .right-box-log button.social.facebook {
+        background: #32508e; }
+      #login-box .right-box-log button.social.twitter {
+        background: #55acee; }
+      #login-box .right-box-log button.social.google {
+        background: #dd4b39; }
+  #login-box .or {
+    position: absolute;
+    top: 18rem;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    width: 4rem;
+    height: 4rem;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 4rem;
+    text-align: center;
+    color: #b97f6d; }

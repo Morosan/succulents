@@ -1,6 +1,6 @@
 .about-us-component {
   width: 100%;
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +65,7 @@
         background-color: black;
         width: 50%;
         height: 50rem;
-        background-image: url(/xampp/htdocs/succulents/img/image-aloe.jpg);
+        background-image: url("/succulents/img/image-aloe.jpg");
         background-size: cover;
         background-position: top left;
       }
@@ -74,7 +74,7 @@
         width: 50%;
         background-color: gray;
         height: 50rem;
-        background-image: url(/xampp/htdocs/succulents/img/bg-image3.jpg);
+        background-image: url("/succulents/img/bg-image3.jpg");
         background-size: cover;
         background-position: center;
       }

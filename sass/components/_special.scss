@@ -1,5 +1,5 @@
 .special-request-component {
-  background-image: url("/xampp/htdocs/succulents/img/medium-green.jpg");
+  background-image: url("/succulents/img/medium-green.jpg");
   background-repeat: no-repeat; 
   background-size: cover;
   color: $white;
@@ -9,13 +9,14 @@
   height: 70rem;
   width: 100%;
   margin: auto;
-  max-width: 140rem;
+  max-width: 110rem;
 
   .sr-main-title {
     margin: 10rem 0 0 0;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     word-spacing: 0.6rem;
+    padding: 0 2rem;
   }
 
   .hr {
@@ -42,6 +43,10 @@
 
       &:hover {
         background-color: $gray;
+      }
+
+      &::placeholder {
+        color: $primary;
       }
     }
 
